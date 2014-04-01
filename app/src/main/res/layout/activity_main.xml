@@ -34,4 +34,24 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/latitude"
         android:name="com.google.android.gms.maps.MapFragment"/>
+
+    <EditText
+        android:id="@+id/location_edittext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/longitude"
+        android:hint="Search for location"
+        android:layout_toRightOf="@+id/longitude"
+        android:layout_toLeftOf="@+id/search_button" />
+
+    <Button
+        android:id="@+id/search_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:background="@android:color/holo_blue_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Nearby"
+        android:layout_above="@+id/map"
+        android:layout_alignRight="@+id/map"
+        android:layout_alignEnd="@+id/map" />
 </RelativeLayout>
